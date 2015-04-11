@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" method="upgrade" group="jshoppingorder">
+    <name>short_descr_inorder</name>
+    <creationDate>12.07.2014</creationDate>
+    <version>1.1.0</version>
+    <author>Beagler</author>
+    <authorEmail>beagler@beagler.ru</authorEmail>
+    <authorUrl>http://beagler.ru</authorUrl>
+    <copyright>Copyright (C) 2014 beagler.ru. All rights reserved</copyright>
+    <license>Beagler</license>
+    <description>PLG_SHORT_DESCR_XML_DESCRIPTION</description> 
+	<scriptfile>script.php</scriptfile>
+    <files>
+        <filename plugin="short_descr_inorder">short_descr_inorder.php</filename>
+        <folder>element</folder>
+    </files>
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="status" type="status"
+					size="1" 
+                    default="0" 
+					description="PLG_SHORT_DESCR_FIELD_STATUS_DESC"
+					label="PLG_SHORT_DESCR_FIELD_STATUS_LABEL"
+					addfieldpath="/plugins/jshoppingorder/short_descr_inorder/element"
+				/>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
